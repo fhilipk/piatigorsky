@@ -1,0 +1,14 @@
+body {
+	max-width: 940px;
+	margin: 0 auto;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+.nav {
+
+}
+
+.nav li {
+	display: inline;
+	list-style-type: none;
+}
