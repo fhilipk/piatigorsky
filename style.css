@@ -59,6 +59,34 @@ body {
   color: white;	
 }
 
+#hero-title {
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+}
+
+.videoContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#hero-video:before {    /* create a full-height inline block pseudo=element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+.videoContainer video {
+    min-width: 100%;
+    min-height: 100%;
+    filter: grayscale(100%);
+    opacity: 0.4;
+    z-index: 50;
+}
+
 @media all and (max-width: 800px) {
   .nav-menu {
     justify-content: space-around;
@@ -82,18 +110,4 @@ body {
   .nav-menu li:last-of-type a {
     border-bottom: none;
   }
-}
-
-.videoContainer
-{
-    position: relative;
-    height: 100%;
-    width: 1200px;
-    overflow: hidden;
-}
-
-.videoContainer video
-{
-    min-width: 100%;
-    min-height: 100%;
 }
